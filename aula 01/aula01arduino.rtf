@@ -1,0 +1,41 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1344\cocoasubrtf720
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 16 mhz (16 milh\'f5es de instru\'e7\'f5es executadas por ciclo)\
+ 32kb memoria flash (suficiente para grande maioria dos projetos, \'e9 o que guarda o c\'f3digo bin\'e1rio para a m\'e1quina)\
+2kb RAM (a cada fun\'e7\'e3o loop a mem\'f3ria ram \'e9 lida e depois limpa para ser lida novamente)\
+1kb EEPROM (guarda informa\'e7\'f5es, ideal para guardar arquivos de configura\'e7\'e3o que n\'e3o podem ser limpos a cada execu\'e7\'e3o, por conveni\'eancia)\
+\
+Um shield \'e9 um circuito, ou placa, toda pronta para ser \'93acoplada\'94 a placa Arduino que est\'e1 sendo usada, dando acesso a novas funcionalidades. Como, por exemplo, uma placa ethernet que possibilita conex\'e3o wireless ou algo assim.\
+\
+LED (L) - porta 13  / RX - recebendo informa\'e7\'e3o / TX - transmitindo informa\'e7\'e3o / ON - ligado\
+\
+Para calculos relacionados \'e0 corrente e resistor usados temos a Lei de Ohm V= R * i  \
+P = V * i \
+\
+Tensao V no arduino \'e9 5V (cinco volts). Vamos medir um circuito com um multimetro e observar os resultados.\
+\
+	medi\'e7\'e3o do arquivo medicao_multimetro :\
+	v total = 4.84 (ponteiras no inicio e fim do circuito, esperar pr\'f3ximo a 5v)\
+	v led = 3.21 ( ponteiras no led e no fim do circuito, esperar pr\'f3xima a 3v)\
+	v resistor = 1.63 (ponteiras duas pernas do resistor dentro do circuito)\
+	resistor =   300 (medir fora do circuito com mult\'edmetro setado em ohms)\
+	corrente i = 5.28 mA (para medir precisamos fechar o circuito com as ponteiras do mult\'edmetro)\
+\
+	medicao do arquivo medicao_multimetro, com resistor 2k :\
+	v total = 4.99\
+	v led = 2.90\
+	v resistor = 2.07\
+	resistir = 2180 ( 7 vezes maior do que a do outro resistor)\
+	corrente i = 0.94 mA\
+\
+	nesse caso aumentamos a resistencia, e para que se mantenham os 5 volts, a corrente abaixa compensando o aumento da resistencia, respeitando a lei de ohm.\
+\
+Para compactos - Arduino Pro Mini + nRF24L01+\
+\
+\
+\
+}
